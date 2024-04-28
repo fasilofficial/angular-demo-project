@@ -1,0 +1,11 @@
+<section class='min-h-[calc(100vh-48px-80px)] pt-4 md:pt-8 px-2'>
+    <div class='border rounded-md hover:shadow-md transition-all p-2 md:max-w-[50%] mx-auto md:grid grid-cols-2 gap-6'>
+        <img src={{car.image}} class='w-full h-64 object-cover rounded-md mb-2' />
+        <div class='relative'>
+            <h2 class='text-2xl font-semibold'>{{car.name}} {{car.model}}, <span class='text-lg font-regular text-neutral-500'>{{car.brand}}</span></h2>
+            <p class='font-base text-gray-700 text-md mt-2'>{{ car.details }}</p>
+            <h2 class='p-2 bg-blue-400 rounded-md text-center w-1/2 mt-4'>${{car.price}}</h2>
+            <a href='/' class='absolute bottom-0 right-0 px-4 py-2 bg-gray-300 rounded'>Back</a>
+        </div>
+    </div>
+</section>

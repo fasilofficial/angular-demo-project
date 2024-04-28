@@ -1,0 +1,10 @@
+
+<section class='container mx-auto my-4 md:my-8 px-2'>
+    <ul class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4'>
+        <li *ngFor="let car of cars" class='border rounded-md hover:shadow-md transition-all p-2 '>
+            <img src={{car.image}} class='w-full h-64 object-cover rounded-md mb-2' />
+            <a [href]="'/cars/' + car.id " class='text-xl font-semibold'>{{car.name}} {{car.model}}, <span class='text-lg font-regular text-neutral-500'>{{car.brand}}</span></a>
+            <p class='font-base text-gray-700 text-md mt-2'>{{ car.details }}</p>
+        </li>
+    </ul>
+</section>
